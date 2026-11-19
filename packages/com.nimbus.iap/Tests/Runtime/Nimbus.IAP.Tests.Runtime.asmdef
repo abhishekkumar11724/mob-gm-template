@@ -1,0 +1,23 @@
+{
+    "name": "Nimbus.IAP.Tests.Runtime",
+    "rootNamespace": "Nimbus.IAP.Tests",
+    "references": [
+        "Nimbus.IAP.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

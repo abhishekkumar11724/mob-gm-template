@@ -1,0 +1,18 @@
+{
+    "name": "Nimbus.Tween.Editor",
+    "rootNamespace": "Nimbus.Tween.Editor",
+    "references": [
+        "Nimbus.Tween.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

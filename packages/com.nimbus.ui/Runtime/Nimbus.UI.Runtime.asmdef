@@ -1,0 +1,21 @@
+{
+    "name": "Nimbus.UI.Runtime",
+    "rootNamespace": "Nimbus.UI",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.Tween.Runtime",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "UniTask",
+        "UniTask.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

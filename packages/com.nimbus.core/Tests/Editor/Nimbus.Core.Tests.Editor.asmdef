@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Core.Tests.Editor",
+    "rootNamespace": "Nimbus.Core.Editor.Tests",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.Core.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

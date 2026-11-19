@@ -1,0 +1,21 @@
+{
+    "name": "Nimbus.Config.Runtime",
+    "rootNamespace": "Nimbus.Config",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Unity.Newtonsoft.Json",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "UniTask",
+        "UniTask.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

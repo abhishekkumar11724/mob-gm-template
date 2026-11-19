@@ -1,0 +1,17 @@
+{
+    "name": "Nimbus.DebugTools.Runtime",
+    "rootNamespace": "Nimbus.DebugTools",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.UI.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

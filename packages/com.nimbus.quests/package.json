@@ -1,0 +1,23 @@
+{
+  "name": "com.nimbus.quests",
+  "version": "0.0.0",
+  "displayName": "Nimbus Quests",
+  "description": "Quest framework for daily, weekly, and event-based tasks.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.core": "0.0.0",
+    "com.nimbus.config": "0.0.0",
+    "com.nimbus.save": "0.0.0",
+    "com.nimbus.economy": "0.0.0",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0"
+  },
+  "keywords": [
+    "quests",
+    "tasks",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

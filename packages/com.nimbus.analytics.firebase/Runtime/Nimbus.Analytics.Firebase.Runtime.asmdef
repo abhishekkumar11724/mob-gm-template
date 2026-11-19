@@ -1,0 +1,18 @@
+{
+    "name": "Nimbus.Analytics.Firebase.Runtime",
+    "rootNamespace": "Nimbus.Analytics.Firebase",
+    "references": [
+        "Nimbus.Analytics.Runtime",
+        "Firebase.App",
+        "Firebase.Analytics"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

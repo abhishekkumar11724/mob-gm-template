@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Consent.Tests.Editor",
+    "rootNamespace": "Nimbus.Consent.Editor.Tests",
+    "references": [
+        "Nimbus.Consent.Runtime",
+        "Nimbus.Consent.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,22 @@
+{
+  "name": "com.nimbus.remote-config",
+  "version": "0.0.0",
+  "displayName": "Nimbus Remote Config",
+  "description": "Remote configuration abstraction and JSON override merging.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.core": "0.0.0",
+    "com.nimbus.config": "0.0.0",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0"
+  },
+  "keywords": [
+    "remote",
+    "config",
+    "overrides",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

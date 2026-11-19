@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.RemoteConfig.Firebase.Tests.Editor",
+    "rootNamespace": "Nimbus.RemoteConfig.Firebase.Editor.Tests",
+    "references": [
+        "Nimbus.RemoteConfig.Firebase.Runtime",
+        "Nimbus.RemoteConfig.Firebase.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

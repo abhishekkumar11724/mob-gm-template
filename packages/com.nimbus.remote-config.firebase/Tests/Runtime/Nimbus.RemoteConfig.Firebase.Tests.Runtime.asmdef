@@ -1,0 +1,25 @@
+{
+    "name": "Nimbus.RemoteConfig.Firebase.Tests.Runtime",
+    "rootNamespace": "Nimbus.RemoteConfig.Firebase.Tests",
+    "references": [
+        "Nimbus.RemoteConfig.Firebase.Runtime",
+        "Firebase.App",
+        "Firebase.RemoteConfig"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Nimbus.Ads.AppLovin.Runtime",
+    "rootNamespace": "Nimbus.Ads.AppLovin",
+    "references": [
+        "Nimbus.Ads.Runtime",
+        "MaxSdk.Scripts"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

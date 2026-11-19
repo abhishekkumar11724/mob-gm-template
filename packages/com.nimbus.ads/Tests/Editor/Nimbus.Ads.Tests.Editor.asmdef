@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Ads.Tests.Editor",
+    "rootNamespace": "Nimbus.Ads.Editor.Tests",
+    "references": [
+        "Nimbus.Ads.Runtime",
+        "Nimbus.Ads.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

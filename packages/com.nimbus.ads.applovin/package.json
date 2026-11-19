@@ -1,0 +1,22 @@
+{
+  "name": "com.nimbus.ads.applovin",
+  "version": "0.1.0",
+  "displayName": "Nimbus Ads AppLovin",
+  "description": "AppLovin MAX implementation for Nimbus Ads.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.ads": "0.0.0",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.applovin.mediation.ads": "8.6.2"
+  },
+  "keywords": [
+    "ads",
+    "applovin",
+    "max",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

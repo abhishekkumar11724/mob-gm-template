@@ -1,0 +1,23 @@
+{
+    "name": "Nimbus.Consent.Tests.Runtime",
+    "rootNamespace": "Nimbus.Consent.Tests",
+    "references": [
+        "Nimbus.Consent.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

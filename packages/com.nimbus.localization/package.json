@@ -1,0 +1,21 @@
+{
+  "name": "com.nimbus.localization",
+  "version": "0.0.0",
+  "displayName": "Nimbus Localization",
+  "description": "Key-based localization with CSV/JSON import pipeline and TMP support.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.core": "0.0.0",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0"
+  },
+  "keywords": [
+    "localization",
+    "nimbus",
+    "i18n",
+    "l10n"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

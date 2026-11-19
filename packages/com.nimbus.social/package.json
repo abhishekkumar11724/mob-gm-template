@@ -1,0 +1,24 @@
+{
+  "name": "com.nimbus.social",
+  "version": "0.0.0",
+  "displayName": "Nimbus Social",
+  "description": "Social sharing, rate prompts, and referral framework.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.core": "0.0.0",
+    "com.nimbus.attribution": "0.0.0",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask#2.5.11",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0"
+  },
+  "keywords": [
+    "social",
+    "sharing",
+    "rating",
+    "referrals",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

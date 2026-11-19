@@ -1,0 +1,20 @@
+{
+    "name": "Nimbus.Analytics.Firebase.Editor",
+    "rootNamespace": "Nimbus.Analytics.Firebase.Editor",
+    "references": [
+        "Nimbus.Analytics.Firebase.Runtime",
+        "Firebase.Editor",
+        "Firebase.App"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

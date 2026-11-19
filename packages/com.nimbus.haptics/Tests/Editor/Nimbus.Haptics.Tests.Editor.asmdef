@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Haptics.Tests.Editor",
+    "rootNamespace": "Nimbus.Haptics.Editor.Tests",
+    "references": [
+        "Nimbus.Haptics.Runtime",
+        "Nimbus.Haptics.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

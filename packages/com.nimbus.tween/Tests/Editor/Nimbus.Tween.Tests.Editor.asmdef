@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Tween.Tests.Editor",
+    "rootNamespace": "Nimbus.Tween.Editor.Tests",
+    "references": [
+        "Nimbus.Tween.Runtime",
+        "Nimbus.Tween.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,21 @@
+{
+  "name": "com.nimbus.ui",
+  "version": "0.0.0",
+  "displayName": "Nimbus UI",
+  "description": "UI framework for screens, popups, and safe area management.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.nimbus.core": "0.0.0",
+    "com.nimbus.tween": "0.0.0"
+  },
+  "keywords": [
+    "ui",
+    "nimbus",
+    "framework"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

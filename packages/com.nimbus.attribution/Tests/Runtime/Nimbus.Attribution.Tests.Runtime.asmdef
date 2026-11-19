@@ -1,0 +1,23 @@
+{
+    "name": "Nimbus.Attribution.Tests.Runtime",
+    "rootNamespace": "Nimbus.Attribution.Tests",
+    "references": [
+        "Nimbus.Attribution.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

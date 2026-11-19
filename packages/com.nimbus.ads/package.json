@@ -1,0 +1,20 @@
+{
+  "name": "com.nimbus.ads",
+  "version": "0.0.0",
+  "displayName": "Nimbus Ads",
+  "description": "Ad provider abstraction with placement and frequency rules.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.nimbus.core": "0.0.0",
+    "com.nimbus.config": "0.0.0"
+  },
+  "keywords": [
+    "ads",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

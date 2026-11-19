@@ -1,0 +1,21 @@
+{
+    "name": "Nimbus.Scene.Runtime",
+    "rootNamespace": "Nimbus.Scene",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.UI.Runtime",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "UniTask",
+        "UniTask.Addressables"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

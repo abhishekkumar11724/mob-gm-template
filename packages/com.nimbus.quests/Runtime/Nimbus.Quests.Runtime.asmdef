@@ -1,0 +1,19 @@
+{
+    "name": "Nimbus.Quests.Runtime",
+    "rootNamespace": "Nimbus.Quests",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.Config.Runtime",
+        "Nimbus.Save.Runtime",
+        "Nimbus.Economy.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Nimbus.Localization.Runtime",
+    "rootNamespace": "Nimbus.Localization",
+    "references": [
+        "Nimbus.Core.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

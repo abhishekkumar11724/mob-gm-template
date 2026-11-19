@@ -1,0 +1,19 @@
+{
+    "name": "Nimbus.Ads.AppLovin.Editor",
+    "rootNamespace": "Nimbus.Ads.AppLovin.Editor",
+    "references": [
+        "Nimbus.Ads.AppLovin.Runtime",
+        "MaxSdk.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

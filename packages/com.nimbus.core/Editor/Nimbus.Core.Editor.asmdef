@@ -1,0 +1,18 @@
+{
+    "name": "Nimbus.Core.Editor",
+    "rootNamespace": "Nimbus.Core.Editor",
+    "references": [
+        "Nimbus.Core.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

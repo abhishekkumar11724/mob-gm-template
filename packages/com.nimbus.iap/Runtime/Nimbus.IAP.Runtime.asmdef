@@ -1,0 +1,19 @@
+{
+    "name": "Nimbus.IAP.Runtime",
+    "rootNamespace": "Nimbus.IAP",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.Config.Runtime",
+        "Nimbus.Save.Runtime",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

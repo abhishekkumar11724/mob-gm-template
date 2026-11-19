@@ -1,0 +1,19 @@
+{
+  "name": "com.nimbus.save",
+  "version": "0.0.0",
+  "displayName": "Nimbus Save",
+  "description": "Slice-based save system with versioning and cloud sync interface.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.nimbus.core": "0.0.0"
+  },
+  "keywords": [
+    "save",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

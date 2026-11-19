@@ -1,0 +1,18 @@
+{
+    "name": "Nimbus.IAP.Unity.Runtime",
+    "rootNamespace": "Nimbus.IAP.Unity",
+    "references": [
+        "Nimbus.IAP.Runtime",
+        "UnityEngine.Purchasing",
+        "UnityEngine.Purchasing.Stores"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.IAP.Unity.Tests.Editor",
+    "rootNamespace": "Nimbus.IAP.Unity.Editor.Tests",
+    "references": [
+        "Nimbus.IAP.Unity.Runtime",
+        "Nimbus.IAP.Unity.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

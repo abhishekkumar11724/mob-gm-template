@@ -1,0 +1,17 @@
+{
+    "name": "Nimbus.Notifications.Runtime",
+    "rootNamespace": "Nimbus.Notifications",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Audio.Tests.Editor",
+    "rootNamespace": "Nimbus.Audio.Editor.Tests",
+    "references": [
+        "Nimbus.Audio.Runtime",
+        "Nimbus.Audio.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

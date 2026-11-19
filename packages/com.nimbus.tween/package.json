@@ -1,0 +1,21 @@
+{
+  "name": "com.nimbus.tween",
+  "version": "0.0.0",
+  "displayName": "Nimbus Tween",
+  "description": "Animation helper wrapper around LitMotion or DOTween.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.nimbus.core": "0.0.0",
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.annulusgames.lit-motion": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion#v2.0.2"
+  },
+  "keywords": [
+    "tween",
+    "animation",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

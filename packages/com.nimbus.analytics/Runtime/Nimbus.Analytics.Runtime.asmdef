@@ -1,0 +1,17 @@
+{
+    "name": "Nimbus.Analytics.Runtime",
+    "rootNamespace": "Nimbus.Analytics",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

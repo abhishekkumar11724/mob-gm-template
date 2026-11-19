@@ -1,0 +1,24 @@
+{
+    "name": "Nimbus.Consent.Editor",
+    "rootNamespace": "Nimbus.Consent.Editor",
+    "references": [
+        "Nimbus.Consent.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.modules.ios",
+            "expression": "1.0.0",
+            "define": "UNITY_IOS"
+        }
+    ],
+    "noEngineReferences": false
+}

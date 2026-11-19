@@ -1,0 +1,23 @@
+{
+    "name": "Nimbus.DailyRewards.Tests.Runtime",
+    "rootNamespace": "Nimbus.DailyRewards.Tests",
+    "references": [
+        "Nimbus.DailyRewards.Runtime"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

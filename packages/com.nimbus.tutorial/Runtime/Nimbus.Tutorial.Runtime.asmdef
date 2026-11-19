@@ -1,0 +1,21 @@
+{
+    "name": "Nimbus.Tutorial.Runtime",
+    "rootNamespace": "Nimbus.Tutorial",
+    "references": [
+        "UniTask",
+        "Nimbus.Core.Runtime",
+        "Nimbus.Save.Runtime",
+        "Nimbus.UI.Runtime",
+        "Nimbus.Input.Runtime",
+        "Nimbus.Localization.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

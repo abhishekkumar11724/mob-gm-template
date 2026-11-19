@@ -1,0 +1,17 @@
+{
+    "name": "Nimbus.Audio.Runtime",
+    "rootNamespace": "Nimbus.Audio",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

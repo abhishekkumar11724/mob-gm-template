@@ -1,0 +1,18 @@
+{
+    "name": "Nimbus.Economy.Runtime",
+    "rootNamespace": "Nimbus.Economy",
+    "references": [
+        "Nimbus.Core.Runtime",
+        "Nimbus.Config.Runtime",
+        "Nimbus.Save.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

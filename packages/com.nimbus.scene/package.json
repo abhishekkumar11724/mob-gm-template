@@ -1,0 +1,21 @@
+{
+  "name": "com.nimbus.scene",
+  "version": "0.0.0",
+  "displayName": "Nimbus Scene",
+  "description": "Async scene management with persistent boot scene and transition hooks.",
+  "unity": "2022.3",
+  "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "net.tnrd.nsubstitute": "https://github.com/Thundernerd/Unity3D-NSubstitute.git#v5.1.0",
+    "com.nimbus.core": "0.0.0",
+    "com.unity.addressables": "1.21.19",
+    "com.nimbus.ui": "0.0.0"
+  },
+  "keywords": [
+    "scene",
+    "nimbus"
+  ],
+  "author": {
+    "name": "Nimbus Studio"
+  }
+}

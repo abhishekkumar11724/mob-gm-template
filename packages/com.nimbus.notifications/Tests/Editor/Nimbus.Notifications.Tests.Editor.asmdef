@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Notifications.Tests.Editor",
+    "rootNamespace": "Nimbus.Notifications.Editor.Tests",
+    "references": [
+        "Nimbus.Notifications.Runtime",
+        "Nimbus.Notifications.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

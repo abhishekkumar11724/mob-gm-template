@@ -1,0 +1,26 @@
+{
+    "name": "Nimbus.Save.Tests.Editor",
+    "rootNamespace": "Nimbus.Save.Editor.Tests",
+    "references": [
+        "Nimbus.Save.Runtime",
+        "Nimbus.Save.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

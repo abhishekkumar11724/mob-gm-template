@@ -1,0 +1,29 @@
+{
+    "name": "Nimbus.Analytics.Firebase.Tests.Editor",
+    "rootNamespace": "Nimbus.Analytics.Firebase.Editor.Tests",
+    "references": [
+        "Nimbus.Analytics.Firebase.Runtime",
+        "Nimbus.Analytics.Firebase.Editor",
+        "Firebase.App",
+        "Firebase.Analytics",
+        "Firebase.Editor"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "NSubstitute.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
