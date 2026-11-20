@@ -44,7 +44,8 @@ public sealed class InputService : IInputService, IInitializable
 
         foreach (var binding in bindings)
         {
-            if (string.IsNullOrEmpty(binding.ContextName)) continue;
+            if (string.IsNullOrEmpty(binding.ContextName))
+                continue;
 
             if (!_contexts.TryGetValue(binding.ContextName, out var context))
             {
@@ -84,7 +85,8 @@ public sealed class InputService : IInputService, IInitializable
     /// <inheritdoc />
     public void PushContext(string contextName)
     {
-        if (string.IsNullOrEmpty(contextName)) return;
+        if (string.IsNullOrEmpty(contextName))
+            return;
 
         if (!_contexts.ContainsKey(contextName))
         {

@@ -38,8 +38,9 @@ public sealed class HapticsService : IHapticsService
         PlayIosHaptic(pattern);
 #elif UNITY_ANDROID
         PlayAndroidHaptic(pattern);
-#else
-        // Fallback for other platforms
+#elif !UNITY_WEBGL
+        // Fallback for other platforms. WebGL is excluded: the Handheld type does not exist there,
+        // and browsers have no haptics API we can call from here, so haptics are a no-op.
         if (pattern == HapticPattern.Heavy || pattern == HapticPattern.Failure)
         {
             Handheld.Vibrate();

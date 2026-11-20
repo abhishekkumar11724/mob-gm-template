@@ -2,6 +2,8 @@
 
 A modular package-based framework for shipping hybrid casual mobile games on Unity 6.
 
+> **Picking this project up?** Read [docs/HANDOFF.md](docs/HANDOFF.md) first: current state, how builds work, the issues hit so far, and open items.
+
 ## What This Is
 
 A **reusable foundation** for new hybrid casual games. It provides infrastructure — ads, IAP, analytics, save system, remote config, UI flow, and more — as a set of Unity Package Manager packages. Game code stays clean and focused on gameplay.
@@ -118,6 +120,25 @@ Paths are relative to `sample-game/Packages/`.
 Binary assets (images, audio, models, videos) are tracked via Git LFS per `.gitattributes`. Always run `git lfs pull` after cloning or switching branches — otherwise asset files will be text pointer stubs, not actual content.
 
 Plain-text asset files (`.meta`, `.unity`, `.prefab`, `.mat`, `.asset`, `.asmdef`) are **not** in LFS. They stay as normal Git files so merges and diffs work correctly.
+
+## Building
+
+Unity compiles the game (Roslyn for C#, IL2CPP + the bundled NDK for Android); the .NET SDK is only for IDE tooling and `dotnet format`. Build entry points live in `sample-game/Assets/_Project/Editor/BuildRunner.cs`.
+
+Android (APK, IL2CPP, ARM64, min SDK 26):
+
+```bash
+~/Unity/Hub/Editor/6000.6.9f1/Editor/Unity -batchmode -nographics -quit \
+  -projectPath sample-game -buildTarget Android -logFile build-android.log \
+  -executeMethod Nimbus.Build.BuildRunner.BuildAndroid
+```
+
+Output goes to `sample-game/Builds/Android/NimbusSample.apk`. Optional flags: `-buildAab` (App Bundle for Play Store), `-development`, `-outputPath <dir>`. Unity must not have the project open.
+
+- **Signing:** with no keystore configured the APK is signed with Unity's debug keystore (fine for sideloading, not for Play Store). For release, export `NIMBUS_KEYSTORE_PATH`, `NIMBUS_KEYSTORE_PASS`, `NIMBUS_KEY_ALIAS` and `NIMBUS_KEY_PASS` before building. Never commit the keystore.
+- **Browser (WebGL):** no device needed. Build with `-buildTarget WebGL -executeMethod Nimbus.Build.BuildRunner.BuildWebGL` (add `-development` for a faster, unoptimised build), then run `tools/serve-webgl.sh` and open the printed URL on this machine or on a phone on the same Wi-Fi. Output is uncompressed so any static server works. Android-only features (haptics, native ads, IAP, notifications) do not run in a browser. For the fastest edit loop, use Play mode with Window → General → Device Simulator instead of a build.
+- **iOS:** `BuildRunner.BuildiOS` exports an Xcode project to `Builds/iOS/`. Producing an `.ipa` requires macOS with Xcode and the Unity iOS module, so it cannot be done on Linux.
+- **CI:** `.github/workflows/ci.yml` runs the same `BuildRunner` methods through `game-ci/unity-builder`.
 
 ## Code Style
 

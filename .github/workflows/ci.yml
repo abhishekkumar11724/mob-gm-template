@@ -19,8 +19,10 @@ jobs:
         with:
           dotnet-version: 8.x
           
+      # Unity's .csproj/.sln files are gitignored, so a fresh checkout has no MSBuild project.
+      # Folder mode formats by path using .editorconfig instead.
       - name: Format Check
-        run: dotnet format --verify-no-changes
+        run: dotnet format whitespace --folder . --verify-no-changes --include packages/ sample-game/Assets/_Project/
         
       - name: Manifest Validation
         run: python3 tools/ci/validate_manifests.py
@@ -54,7 +56,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           projectPath: sample-game
-          unityVersion: 6000.3.8f1
+          unityVersion: 6000.6.9f1
           testMode: ${{ matrix.testMode }}
           artifactsPath: ${{ matrix.testMode }}-artifacts
           githubToken: ${{ secrets.GITHUB_TOKEN }}
@@ -81,11 +83,9 @@ jobs:
           restore-keys: |
             Library-sample-game-${{ runner.os }}-${{ matrix.targetPlatform }}-
             
-      - name: Setup BuildRunner
-        run: |
-          mkdir -p sample-game/Assets/_Project/Editor
-          cp tools/build/BuildRunner.cs sample-game/Assets/_Project/Editor/BuildRunner.cs
-          
+      # BuildRunner lives in sample-game/Assets/_Project/Editor. Android produces an APK (debug-signed
+      # unless signing env vars are supplied). iOS only exports an Xcode project on Linux; compiling
+      # it into an .ipa needs macOS + Xcode.
       - uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -93,7 +93,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           projectPath: sample-game
-          unityVersion: 6000.3.8f1
+          unityVersion: 6000.6.9f1
           targetPlatform: ${{ matrix.targetPlatform }}
           buildMethod: Nimbus.Build.BuildRunner.Build${{ matrix.targetPlatform }}
           

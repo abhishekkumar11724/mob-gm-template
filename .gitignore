@@ -14,6 +14,9 @@ sample-game/Temp/
 sample-game/Obj/
 sample-game/Build/
 sample-game/Builds/
+sample-game/build/
+sample-game/Data/
+sample-game/.utmp/
 sample-game/Logs/
 sample-game/UserSettings/
 sample-game/MemoryCaptures/

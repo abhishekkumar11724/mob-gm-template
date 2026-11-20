@@ -29,7 +29,7 @@ public sealed class LoadingScreenController
         // For now, we assume the game registers a view named 'LoadingScreen'.
         // Or we might need a more concrete way to identify the loading view.
         Log.Scene.Info($"Showing loading screen with style: {style}");
-        
+
         // This is a placeholder for actual UI logic.
         // In a real implementation, we might call _uiService.ShowScreenAsync<LoadingScreenView>();
         await UniTask.CompletedTask;

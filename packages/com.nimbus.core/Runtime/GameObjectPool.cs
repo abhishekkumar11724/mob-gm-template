@@ -43,7 +43,7 @@ public sealed class GameObjectPool : IPool<GameObject>, IDisposable
 
         _onReturn?.Invoke(item);
         item.SetActive(false);
-        
+
         if (_parent != null)
         {
             item.transform.SetParent(_parent);

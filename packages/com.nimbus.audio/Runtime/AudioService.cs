@@ -19,7 +19,7 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
     private readonly GameObjectPool _sfxPool;
     private readonly AudioSource _musicSourceA;
     private readonly AudioSource _musicSourceB;
-    
+
     private bool _isSourceAActive = true;
     private float _masterVolume = 1.0f;
     private float _musicVolume = 1.0f;
@@ -40,14 +40,15 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
         var sfxGo = new GameObject("SfxSourceTemplate");
         var templateSource = sfxGo.AddComponent<AudioSource>();
         templateSource.playOnAwake = false;
-        
+
         if (poolParent != null)
         {
             sfxGo.transform.SetParent(poolParent);
         }
         sfxGo.SetActive(false);
 
-        _sfxPool = new GameObjectPool(sfxGo, poolParent, null, source => {
+        _sfxPool = new GameObjectPool(sfxGo, poolParent, null, source =>
+        {
             var audioSource = source.GetComponent<AudioSource>();
             audioSource.Stop();
             audioSource.clip = null;
@@ -65,7 +66,7 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
 
         _musicSourceA = musicRoot.AddComponent<AudioSource>();
         _musicSourceB = musicRoot.AddComponent<AudioSource>();
-        
+
         _musicSourceA.loop = true;
         _musicSourceB.loop = true;
         _musicSourceA.playOnAwake = false;
@@ -188,7 +189,8 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
 
         while (elapsed < duration)
         {
-            if (ct.IsCancellationRequested) return;
+            if (ct.IsCancellationRequested)
+                return;
 
             elapsed += Time.unscaledDeltaTime;
             float t = elapsed / duration;
@@ -212,7 +214,8 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
 
         while (elapsed < duration)
         {
-            if (ct.IsCancellationRequested) return;
+            if (ct.IsCancellationRequested)
+                return;
 
             elapsed += Time.unscaledDeltaTime;
             source.volume = Mathf.Lerp(startVolume, 0, elapsed / duration);
@@ -241,7 +244,8 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
 
         while (elapsed < duration)
         {
-            if (ct.IsCancellationRequested) return;
+            if (ct.IsCancellationRequested)
+                return;
 
             elapsed += Time.unscaledDeltaTime;
             _duckFactor = Mathf.Lerp(startFactor, targetFactor, elapsed / duration);
@@ -257,8 +261,10 @@ public sealed class AudioService : IAudioService, IInitializable, IDisposable
     private void UpdateMusicVolumes()
     {
         float musicVol = GetCombinedMusicVolume();
-        if (_musicSourceA.isPlaying) _musicSourceA.volume = musicVol;
-        if (_musicSourceB.isPlaying) _musicSourceB.volume = musicVol;
+        if (_musicSourceA.isPlaying)
+            _musicSourceA.volume = musicVol;
+        if (_musicSourceB.isPlaying)
+            _musicSourceB.volume = musicVol;
     }
 
     private float GetCombinedMusicVolume() => _isMuted ? 0 : _masterVolume * _musicVolume * _duckFactor;

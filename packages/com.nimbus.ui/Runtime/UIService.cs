@@ -58,7 +58,7 @@ public sealed class UIService : IUIService, IInitializable
 
         _screenStack.Push(screen);
         await screen.ShowAsync();
-        
+
         Log.UI.Info($"Showing screen: {typeof(T).Name}");
         return screen;
     }
@@ -86,7 +86,7 @@ public sealed class UIService : IUIService, IInitializable
             var previous = _screenStack.Peek();
             await previous.ShowAsync();
         }
-        
+
         Log.UI.Info($"Hidden screen: {typeof(T).Name}");
     }
 
@@ -147,7 +147,7 @@ public sealed class UIService : IUIService, IInitializable
 
         var popup = await GetOrLoadViewAsync(nextInfo.Type);
         _activePopup = (PopupView)popup;
-        
+
         Log.UI.Info($"Processing popup from queue: {nextInfo.Type.Name}");
         await _activePopup.ShowAsync();
         nextInfo.CompletionSource.TrySetResult(_activePopup);
@@ -169,10 +169,10 @@ public sealed class UIService : IUIService, IInitializable
         // Conventional addressable key: the type name
         var address = type.Name;
         Log.UI.Info($"Loading view prefab from Addressables: {address}");
-        
+
         var handle = Addressables.LoadAssetAsync<GameObject>(address);
         var prefab = await handle.ToUniTask();
-        
+
         var instance = Object.Instantiate(prefab, _root).GetComponent<ViewBase>();
         if (instance == null)
         {

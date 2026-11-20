@@ -196,7 +196,7 @@ public sealed class ConfigBrowserWindow : EditorWindow
                 SimulateApplyAll();
             }
             EditorGUILayout.EndHorizontal();
-            
+
             EditorGUILayout.HelpBox("Simulation applies changes in memory. Use AssetDatabase.SaveAssets() or save the SO to persist if desired.", MessageType.Info);
         }
         EditorGUILayout.EndFoldoutHeaderGroup();

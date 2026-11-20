@@ -88,7 +88,7 @@ public sealed class SceneService : ISceneService
         {
             await _loadingController.HideAsync();
         }
-        
+
         Log.Scene.Info("Scene transition completed.");
     }
 

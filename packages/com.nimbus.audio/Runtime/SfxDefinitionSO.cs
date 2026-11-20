@@ -7,9 +7,9 @@ namespace Nimbus.Audio;
 public sealed class SfxDefinitionSO : ScriptableObject
 {
     [SerializeField] private List<AudioClip> _clips = new();
-    [SerializeField] [Range(0.0f, 1.0f)] private float _volume = 1.0f;
-    [SerializeField] [Range(0.1f, 3.0f)] private float _pitch = 1.0f;
-    [SerializeField] [Range(0.0f, 0.5f)] private float _pitchRandomization = 0.0f;
+    [SerializeField][Range(0.0f, 1.0f)] private float _volume = 1.0f;
+    [SerializeField][Range(0.1f, 3.0f)] private float _pitch = 1.0f;
+    [SerializeField][Range(0.0f, 0.5f)] private float _pitchRandomization = 0.0f;
 
     public IReadOnlyList<AudioClip> Clips => _clips;
 

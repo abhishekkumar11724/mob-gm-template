@@ -90,7 +90,7 @@ public sealed class SaveService : ISaveService, IInitializable
         Log.Save.Info($"Switching save profile from '{_currentProfileId}' to '{profileId}'.");
         _currentProfileId = profileId;
         IsLoaded = false;
-        
+
         await LoadAsync(cancellationToken);
     }
 
@@ -219,8 +219,8 @@ public sealed class SaveService : ISaveService, IInitializable
             ["profile"] = _currentProfileId
         };
 
-        var slicesNode = _latestLoadedSlices != null 
-            ? new JObject(_latestLoadedSlices) 
+        var slicesNode = _latestLoadedSlices != null
+            ? new JObject(_latestLoadedSlices)
             : new JObject();
 
         foreach (var slice in _slices.Values)
